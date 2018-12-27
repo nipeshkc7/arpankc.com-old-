@@ -1,0 +1,181 @@
+body{
+	background-image: url("../img/chalkboard.jpg");
+}
+
+
+.container{
+	margin-left:50px;
+	margin-right:50px;
+	padding:30px;
+}
+
+.my-pic{	
+	margin-top: 40px;
+}
+
+.my-pic img{
+	height: 240px;
+	border-radius:50%;
+	display:block;
+	margin-left: auto;
+    margin-right: auto;    
+}
+
+.about-me p{
+	margin:20px;
+	margin-top:30px;
+	font-family: arial;
+	color:#ffffff;
+	font-size: 40px;
+	text-align:center;
+	font-family:'Ubuntu', sans-serif;
+	}
+
+.social-media-links{
+	display:block;
+	margin:0 auto;
+	width:220px;
+	font-size:30px;
+	transition-duration: 2s;
+}
+
+.nav-options ul{
+	display:block;
+	margin:0 auto;
+	margin-top:20px;
+	width:220px;
+	font-size:20px;
+	font-family:'Ubuntu', sans-serif;
+	color:#D2CBCB;
+	list-style: none;
+}
+
+.nav-options ul li{
+	margin-left:5px;
+	margin-bottom:0px;
+}
+
+.nav-options ul li:hover{
+	cursor: pointer;
+	opacity:0.7;
+	text-decoration: underline;
+	transition-duration: 0.5s;
+}
+
+.fa {
+    padding: 8px; 
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    opacity: 0.7;
+    transform:scale(1.6);
+	transition-duration: 0.5s;
+    
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-github {
+    color: white;
+}
+
+
+.connect-button{
+	display:block;
+	margin:0 auto;
+	font-size:25px;
+	margin-top:15px;
+	padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	color:#FFFFFF;
+	background-color:transparent;
+	text-align:center;
+	transition: all 0.2s;
+	}
+
+.connect-button:hover{
+	color:#2a2a2a;
+	background-color:#FFFFFF;
+	transition-duration: 0.5s;
+	cursor: pointer;
+	}
+
+
+.popup{
+	height: 650px;
+	width:50%;
+	position: absolute;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	border: solid #ffffff;
+	border-radius: 5px;
+	background: #ccc;
+	opacity: 0.8;
+	font-family: 'Ubuntu',sans-serif;
+	padding-left: 55px;
+	padding-top:40px;
+	padding-right:55px;
+}
+
+#skills, #previousWork{
+	height:0;
+	opacity:0;
+}
+
+ #list{
+	display:none;
+} 
+
+#list li a{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.closebtn{
+	position: absolute;
+	right:5px;
+	top:10px;
+	opacity: 0.6;
+}
+
+.closebtn:hover{
+	cursor: pointer;
+}
+
+@media screen and (max-width: 555px) {
+	.container{
+		padding: 20px;
+		display:block;
+		margin:0 auto;
+	}
+
+	.social-media-links{
+		display:block;
+		margin:0 auto;
+
+	}
+
+	.about-me{
+		width:80%;
+		display:block;
+		margin:0 auto;
+	}
+
+	
+	.connect-button{
+		display:block;
+		width:100%;
+	}
+
+	body{
+		width:auto;
+	}
+
+  }

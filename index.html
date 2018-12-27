@@ -1,0 +1,71 @@
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Arpan KC</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/script.js" type="text/Javascript"></script>
+</head>
+
+<body>
+	<div class="popup" id="skills">
+			<span class="fa fa-close closebtn" onClick="closepopup('skills')"></span>
+			<h1>Skills</h1>
+			<ul id="list">
+				<li><h2>HTML,CSS, Javascript(ES6+)</h2> <span class="desc">Fluent with HTML and CSS (and Bootstrap), also with ECMAScript6 Javascript.Check out some of my work for <a href="http://twenty74.com.au">Twenty74</a> and <a href="http://lifesciencenepal.com">Nepal Life Science</a></span></li>
+				<!-- <li><h2>Jquery</h2><span>One of my goto choices for a javascript framework when first starting out. Have used Jquery in a number of mini projects like <a href="https://github.com/nipeshkc7/Library-management-system">This one</a></span></li> -->
+				<li><h2>Programming Languages</h2><span>Started out with C (Check out my <a href="https://github.com/nipeshkc7/TicTacToe">tictactoe game</a>). Soon after started using alot of C++(Shamelessly plugging my uni work <a href="https://github.com/nipeshkc7/CSCI251">HERE</a>) and Java. And also, PHP.</span></li>
+				<li><h2>More JS</h2><span>Recently been trying out alot of javascript stuff including nodeJS, React, Mongo, Express. Check out a <a href="github.com/nipeshkc7/Team_Oreo">plagiarism detection tool</a> my group worked on recently which was done on full stack javascript(node,express,handlebarjs).</span></li>
+				<li><h2>Android app development</h2>Because Android rules. IOS drools. Check out <a href="https://github.com/nipeshkc7/GadgetsInNepalapp">GadgetsInNepal app</a> and <a href="https://github.com/nipeshkc7/Teachers-Assistant">TeachersAssistant app</a>. Both yet to be published</li>
+				<li><h2>Linux</h2><span>Ubuntu's my favourite distro. Hence the font choice. If you're not down with that, then go rm -rf yourself.</span></li>
+				<li><h2>Wordpress</h2><span>Sometimes CMS is the way to go. <a href="http://lifesciencenepal.com">Life Science Nepal website</a> was setup using Wordpress (with a cutomised theme).</span></li>
+			</ul>
+	</div>
+
+	
+	<div class="popup" id="previousWork">
+		<span class="fa fa-close closebtn" onClick="closepopup('previousWork')"></span>
+		<h1>Previous work</h1>
+		<ul id="list">
+			<li><h2>HTML,CSS, Javascript(ES6+)</h2> <span class="desc">Fluent with HTML and CSS (and Bootstrap), also with ECMAScript6 Javascript.Check out some of my work for <a href="http://twenty74.com.au">Twenty74</a> and <a href="http://lifesciencenepal.com">Nepal Life Science</a></span></li>
+			<!-- <li><h2>Jquery</h2><span>One of my goto choices for a javascript framework when first starting out. Have used Jquery in a number of mini projects like <a href="https://github.com/nipeshkc7/Library-management-system">This one</a></span></li> -->
+			<li><h2>Programming Languages</h2><span>Started out with C (Check out my <a href="https://github.com/nipeshkc7/TicTacToe">tictactoe game</a>). Soon after started using alot of C++(Shamelessly plugging my uni work <a href="https://github.com/nipeshkc7/CSCI251">HERE</a>) and Java. And also, PHP.</span></li>
+			<li><h2>More JS</h2><span>Recently been trying out alot of javascript stuff including nodeJS, React, Mongo, Express. Check out a <a href="github.com/nipeshkc7/Team_Oreo">plagiarism detection tool</a> my group worked on recently which was done on full stack javascript(node,express,handlebarjs).</span></li>
+			<li><h2>Android app development</h2>Because Android rules. IOS drools. Check out <a href="https://github.com/nipeshkc7/GadgetsInNepalapp">GadgetsInNepal app</a> and <a href="https://github.com/nipeshkc7/Teachers-Assistant">TeachersAssistant app</a>. Both yet to be published</li>
+			<li><h2>Linux</h2><span>Ubuntu's my favourite distro. Hence the font choice. If you're not down with that, then go rm -rf yourself.</span></li>
+			<li><h2>Wordpress</h2><span>Sometimes CMS is the way to go. <a href="http://lifesciencenepal.com">Life Science Nepal website</a> was setup using Wordpress (with a cutomised theme).</span></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		
+		<div class="my-pic">
+			<img src="img/my_only_good_picture.jpg">
+		</div>
+
+		<div class="about-me">
+			<p>Full Stack Web Developer</p>
+		</div>
+		<div class="social-media-links">
+			<a href="http://github.com/nipeshkc7" class="fa fa-github social-link"></a>
+			<a href="http://linkedin.com/arpan-kc7" class="fa fa-linkedin social-link"></a>
+			<a href="http://facebook.com/nipeshkc7" class="fa fa-facebook social-link"></a>
+			<a href="http://twitter.com/nipeshkc7" class="fa fa-twitter social-link"></a>
+		</div>
+		<div class="nav-options">
+			<ul>
+				<li onClick="openpopup('skills')"><span class="fa fa-code"></span>Skills</li>
+				<li onClick="openpopup('previousWork')"><span class="fa fa-laptop"></span>Previous work</li>
+				<li onClick="openpopup('myServices')"><span class="fa fa-thumbs-up"></span>My Services</li>
+				<li onClick="openpopup('contact')"><span class="fa fa-phone"></span>Contact info</li>
+			</ul>
+		</div>
+		<div class="button-section">
+				<button class="connect-button">Hit me up!</button>
+		</div>
+	</div>
+</body>
+
+</html>
