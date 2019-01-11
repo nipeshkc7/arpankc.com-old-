@@ -3,7 +3,7 @@ body{
 }
 
 
-.container{
+.mainContainer{
 	margin-left:50px;
 	margin-right:50px;
 	padding:30px;
@@ -107,7 +107,7 @@ body{
 
 
 .popup{
-	height: 650px;
+	/* height: 650px; */
 	width:50%;
 	position: absolute;
 	left:0;
@@ -117,14 +117,16 @@ body{
 	border: solid #ffffff;
 	border-radius: 5px;
 	background: #ccc;
-	opacity: 0.8;
+	/* opacity: 0.8; */
 	font-family: 'Ubuntu',sans-serif;
-	padding-left: 55px;
+	/* padding-left: 55px;
 	padding-top:40px;
 	padding-right:55px;
+	padding-bottom:30px; */
 }
 
-#skills, #previousWork{
+
+#skills, #previousWork, #myServices, #contactInfo, #connect{
 	height:0;
 	opacity:0;
 }
@@ -149,8 +151,149 @@ body{
 	cursor: pointer;
 }
 
+/* previous work popup style */
+
+#monitor{
+	display:none;
+}
+
+#monitor-screen {
+	width: 500px;
+	height: 280px;
+	margin: auto;
+	overflow: hidden;
+	border: 20px solid #333;
+	text-align: center;
+	border-radius: 20px 20px 0 0;
+	background-image: url('../img/twenty74.png');
+	background-size:cover;
+	background-position: top center;
+	transition:background-position 4s linear;
+	/* this is added later., may break something */
+	position:relative;	
+	
+  }
+  #monitor-screen span{
+	  visibility: hidden;
+  }
+
+#monitor-screen span{
+	color: white;
+	font-size: 25px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+#previousWork #previousWorkContent span{
+	font-size: 28px;
+}
+
+#skillsContent, #previousWorkContent, #myServicesContent, #contactInfoContent, #connectContent{
+	display:none;
+	transition:all 1s linear;
+}
+
+#previousWork #previousWorkContent span:hover{
+	cursor:pointer;
+	color:white;
+  	background-color: rgba(0,0,0,0.8);
+}
+#monitor-screen span:hover{
+	cursor:pointer;
+  	background-color: rgba(0,0,0,0.8);
+}
+
+.front-arrow{
+	position: absolute;
+	top:50%;
+	right:1%;
+}
+
+.back-arrow{
+	position: absolute;
+	top:50%;
+	left:1%;
+}
+  
+  #monitor-screen:hover {
+	background-position: bottom center;
+  }
+  
+  .monitor-screen-bottom {
+	width: 540px;
+	height: 40px;
+	margin: auto;
+	background: #E4E4E4;
+	position: relative;
+	border-radius: 0 0 20px 20px;
+  }
+  
+  #monitor-screen-bottom img {
+	max-width: 20px;
+	position: absolute;
+	top: 8px;
+	left: 255px;
+  }
+  
+  .monitor-stand {
+	width: 100px;
+	height: 50px;
+	background: #BAB9BA;
+	margin: auto;
+  }
+  
+  .monitor-stand::before,
+  .monitor-stand::after {
+	content: "";
+	background: #BAB9BA;
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: relative;
+  }
+  
+  .monitor-stand::before {
+	left: 55%;
+	transform: skewX(10deg);
+  }
+  
+  .monitor-stand::after {
+	top: -50px;
+	right: 5%;
+	transform: skewX(-10deg);
+  }
+  
+  .monitor-base {
+	width: 200px;
+	height: 20px;
+	background: #D3D3D3;
+	margin: auto;
+  }
+
+  #project-title{
+	margin-top:30px;
+	font-size:28px;
+	font-weight: bold;
+	text-align: center;
+  }
+
+  #project-title a{
+	  text-decoration: none;
+	  font-style: none;
+	  color:black;
+  }
+
+  #project-description{
+	  font-weight:20px;
+	  text-align:center;
+	  margin-top:10px;
+  }
+
+
 @media screen and (max-width: 555px) {
-	.container{
+	.mainContainer{
 		padding: 20px;
 		display:block;
 		margin:0 auto;
@@ -178,4 +321,95 @@ body{
 		width:auto;
 	}
 
+	.popup{
+		padding:15px;
+		margin:0 auto;
+		width:80%;
+	}
+	#monitor-screen{
+		width:88%;
+		margin:0 auto;
+		padding:0;
+		border-radius: 20px;
+	}
+
+	#monitor-screen div span{
+		visibility:visible;
+	}
+	.monitor-screen-bottom,.monitor-stand,.monitor-base{
+		display:none;
+	}
+
   }
+
+  
+@media screen and (max-width: 1024px) and (min-width:555px){
+	.popup{
+		padding:5px;
+		width:80%;
+		padding-bottom:20px;
+	}
+	#monitor-screen{
+		width:75%;
+	 }
+
+	.monitor-screen-bottom{
+		width:81%;
+		position: inherit;
+		display:block;
+		margin:0 auto;
+	}
+}
+
+/* form css */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],input[type=email], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */  
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+
+  #sendmessage {
+    color: green;
+    border:1px solid green;
+    display:none;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#errormessage {
+    color: red;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#sendmessage.show, #errormessage.show, .show {
+    display:block;
+}
